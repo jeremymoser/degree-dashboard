@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --pbsc-offwhite: #f2f1f3;
+    --pbsc-green: #1a9d7d;
+    --pbsc-blue: #0073a6;
+    --pbsc-gold: #edb731;
+    --pbsc-darkgreen: #2b695a;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.pbsc-logo {
+    max-width: 225px;
+}
+
+.bg-pbsc-offwhite {
+    background-color: var(--pbsc-offwhite);
+}
+
+.bg-pbsc-green {
+    background-color: var(--pbsc-green);
+}
+
+.bg-pbsc-blue {
+    background-color: var(--pbsc-blue);
+}
+
+.text-pbsc-green {
+    color: var(--pbsc-green);
+}
+
+.text-pbsc-blue {
+    color: var(--pbsc-blue);
+}
+
+.text-pbsc-gold {
+    color: var(--pbsc-gold);
+}
+
+.text-pbsc-darkgreen {
+    color: var(--pbsc-darkgreen);
+}
+
+.borderbottom-pbsc-darkgreen {
+    border-bottom: solid 1px var(--pbsc-darkgreen);
+}
+
+.bordertop-pbsc-blue {
+    border-top: solid 1px var(--pbsc-blue);
+}
+
+.percentage {
+    border-top: solid 1px white;
+}
+
+.table-sticky {
+    position: sticky;
+    top: 0;
+}
+
+canvas {
+    width: auto;
+    max-height: 300px;
+}
