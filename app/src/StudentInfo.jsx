@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard, faLocationDot, faBuildingColumns, faMap } from '@fortawesome/free-solid-svg-icons'
 
-const StudentInfo = ({ id, studentid, fullname, fullflname, fullminame, dob, address1, address2, city, state, zip, degree, degreecredits, residency }) => {
+const StudentInfo = ({ id, studentid, fullname, fullflname, fullminame, dob, address1, address2, city, state, zip, majorid, major, majorunits, residency }) => {
   return (
     <>
         <div className="border-solid borderbottom-pbsc-darkgreen">
@@ -35,8 +35,8 @@ const StudentInfo = ({ id, studentid, fullname, fullflname, fullminame, dob, add
             </h2>
         </div>
         <div className="m-6">
-            <p>{ degree }</p>
-            <p>Required Credits: { degreecredits }</p>
+            <p>{ major }</p>
+            <p>Required Credits: { majorunits }</p>
         </div>
     </>
   )

@@ -1,5 +1,5 @@
-import React from 'react'
 import requirements from './assets/data/requirements'
+import reqsdata from './assets/data/requirements_data'
 import RequirementItem from './RequirementItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsProgress } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ let completedPercent = 0;
 
 if (requirements.length > 0) {
     for (let i = 0; i < requirements.length; i++) {
-        totalReqs += 1;
+        totalReqs = totalReqs + 1;
         if (requirements[i].status == 'Satisfied') {
             requirementsCompleted += 1;
         };
@@ -32,7 +32,7 @@ if (requirements.length > 0) {
     completedPercent = (totalCompleted == 0)? "0.00%" : (totalCompleted / totalCredits * 100).toFixed(2) + "%";
 }
 
-const DegreeRequirements = () => {
+const Requirements = () => {
   return (
     <>
         <div className="mt-5">
@@ -58,18 +58,18 @@ const DegreeRequirements = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                { requirements.map(requirementdata => (
+                                { requirements.map(req => (
                                 <RequirementItem
-                                    key = { requirementdata.id }
-                                    id = { requirementdata.id }
-                                    title = { requirementdata.title }
-                                    credits = {requirementdata.credits }
-                                    status = { requirementdata.status }
-                                    iconname = { requirementdata.iconname }
-                                    iconclass = { requirementdata.iconclass }
-                                    inprogress = { requirementdata.inprogress }
-                                    remaining = { requirementdata.remaining }
-                                    completed = { requirementdata.completed }
+                                    key = { req.recordid }
+                                    id = { req.id }
+                                    title = { req.title }
+                                    credits = {req.credits }
+                                    status = { req.status }
+                                    iconname = { req.iconname }
+                                    iconclass = { req.iconclass }
+                                    inprogress = { req.inprogress }
+                                    remaining = { req.remaining }
+                                    completed = { req.completed }
                                 />
                                 ))}
                             </tbody>
@@ -81,7 +81,7 @@ const DegreeRequirements = () => {
                                     <td className="bg-pbsc-green p-2 md:p-4 text-white text-md md:text-lg text-center" title={ " " + requirementsPercent + " "}>{ requirementsCompleted }<div className="percentage">{ totalReqs }</div></td>
                                     <td className="bg-pbsc-green p-2 md:p-4 text-center text-white text-md md:text-lg hidden md:table-cell">{ totalInProgress }<div className="percentage">{ inprogressPercent }</div></td>
                                     <td className="bg-pbsc-green p-2 md:p-4 text-center text-white text-md md:text-lg hidden md:table-cell">{ totalRemaining }<div className="percentage">{ remainingPercent }</div></td>
-                                    <td className="bg-pbsc-green p-2 md:p-4 text-center text-white text-md md:text-lg hidden md:table-cell">{ totalCompleted }<div className="percentage">{completedPercent }</div></td>
+                                    <td className="bg-pbsc-green p-2 md:p-4 text-center text-white text-md md:text-lg hidden md:table-cell">{ totalCompleted }<div className="percentage">{ completedPercent }</div></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -93,4 +93,4 @@ const DegreeRequirements = () => {
   )
 }
 
-export default DegreeRequirements
+export default Requirements

@@ -1,5 +1,3 @@
-import React from 'react';
-
 let inprogressPercent = 0;
 let remainingPercent = 0;
 let completedPercent = 0;
@@ -10,7 +8,7 @@ const RequirementItem = ({ id, title, credits, status, iconname, iconclass, inpr
   completedPercent = completed == 0? "(0%)" : "(" + completed / credits * 100 + "%)";
   if( id == 14 || id == 15 || id == 16) { completedPercent = "(100%)"; }
   return (
-    <tr key={ id } className={ id % 2 == 0 ? "bg-gray-100" : "bg-white"}>
+    <tr key={ id } className="even:bg-gray-100">
         <td className="border p-1 md:p-4 text-center hidden md:table-cell">{ id }</td>
         <td className="border p-1 md:p-4">{ title }</td>
         <td className="border p-1 md:p-4 text-center">{ credits }</td>

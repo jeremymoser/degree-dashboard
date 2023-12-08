@@ -103,31 +103,31 @@ export default [
         id: 11,
         title: "(BAS-REQ) 11. Information Management - Database Administration Concentration Area Required Course(s)",
         credits: 15,
-        status: "In progress",
-        iconclass: "fa-solid fa-triangle-exclamation text-yellow-500",
-        inprogress: 9,
+        status: "Satisfied",
+        iconclass: "fa-solid fa-circle-check text-green-500",
+        inprogress: 0,
         remaining: 0,
-        completed: 6
+        completed: 15
     },
     {
         id: 12,
         title: "(BAS-REQ) 12A. Information Management - Database Administration Concentration Capstone Required Course(s)",
         credits: 3,
-        status: "Not satisfied",
-        iconclass: "fa-solid fa-square-xmark text-red-500",
+        status: "Satisfied",
+        iconclass: "fa-solid fa-circle-check text-green-500",
         inprogress: 0,
-        remaining: 3,
-        completed: 0
+        remaining: 0,
+        completed: 3
     },
     {
         id: 13,
         title: "(BAS-REQ) 12B. Information Management - Database Administration - Elective Required Course(s)",
         credits: 3,
-        status: "Not satisfied",
-        iconclass: "fa-solid fa-square-xmark text-red-500",
+        status: "Satified",
+        iconclass: "fa-solid fa-circle-check text-green-500",
         inprogress: 0,
-        remaining: 3,
-        completed: 0
+        remaining: 0,
+        completed: 3
     },
     {
         id: 14,

@@ -22,15 +22,17 @@ function Student () {
                         city = { Student.city }
                         state = { Student.state }
                         zip = { Student.zip }
-                        degree = { Student.major }
-                        degreecredits = { Student.degreecredits }
+                        majorid = { Student.majorid }
+                        major = { Student.major }
+                        majorunits = { Student.majorunits }
                         residency = { Student.residency }
                     />
                 ))}
 
             </div>
             <div className="basis-1/2 text-left p-5">
-                <AtAGlanceChart />                <AtAGlance />
+                <AtAGlanceChart />
+                <AtAGlance />
             </div>
         </div>
     </div>
