@@ -81,7 +81,7 @@ export default [
     },
     {
         id: 9,
-        title: "(BAS-REQ) 09. Information Management - Database Administration Lower Division Electives",
+        title: "(BAS-REQ) 09. Information Management - Database Administration - Lower Division Electives",
         status: "Satisfied",
         iconclass: "fa-solid fa-circle-check text-green-500",
         credits: 24,
