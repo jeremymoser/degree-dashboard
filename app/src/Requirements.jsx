@@ -19,7 +19,8 @@ if (requirements.length > 0) {
     for (let i = 0; i < requirements.length; i++) {
         totalReqs = totalReqs + 1;
         if (requirements[i].status == 'Satisfied') {
-            requirementsCompleted += 1;
+            requirementsCompleted = requirementsCompleted + 1;
+            console.log(requirements[i].title + " is satisfied");
         };
         totalCredits += requirements[i].credits;
         totalInProgress += requirements[i].inprogress;

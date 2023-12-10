@@ -123,7 +123,7 @@ export default [
         id: 13,
         title: "(BAS-REQ) 12B. Information Management - Database Administration - Elective Required Course(s)",
         credits: 3,
-        status: "Satified",
+        status: "Satisfied",
         iconclass: "fa-solid fa-circle-check text-green-500",
         inprogress: 0,
         remaining: 0,
@@ -151,7 +151,27 @@ export default [
     },
     {
         id: 16,
-        title: "(BAS-REQ) 15. Program of Study GPA 2.0 or higher",
+        title: "(BAS-REQ) 15A. Civic Literacy Course (AMH2020 or POS1041)",
+        credits: 0,
+        status: "Satisfied",
+        iconclass: "fa-solid fa-circle-check text-green-500",
+        inprogress: 0,
+        remaining: 0,
+        completed: 0
+    },
+    {
+        id: 17,
+        title: "(BAS-REQ) 15A. Civic Literacy Assessment (FCLE or AP-Goverment & Politics or AP-U.S. History or CLEP-American Goverment)",
+        credits: 0,
+        status: "Satisfied",
+        iconclass: "fa-solid fa-circle-check text-green-500",
+        inprogress: 0,
+        remaining: 0,
+        completed: 0
+    },
+    {
+        id: 18,
+        title: "(BAS-REQ) Program of Study GPA 2.0 or higher",
         credits: 0,
         status: "Satisfied",
         iconclass: "fa-solid fa-circle-check text-green-500",
