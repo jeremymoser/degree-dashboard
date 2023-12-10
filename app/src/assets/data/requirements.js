@@ -71,7 +71,7 @@ export default [
     },
     {
         id: 8,
-        title: "(BAS-REQ) 08. Information Management-Database Administration - Common Core Course(s)",
+        title: "(BAS-REQ) 08. Information Management - Database Administration - Lower Division Required Major Course(s)",
         credits: 18,
         status: "Satisfied",
         iconclass: "fa-solid fa-circle-check text-green-500",       
